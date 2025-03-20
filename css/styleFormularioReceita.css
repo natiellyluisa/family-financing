@@ -1,0 +1,191 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    overflow: hidden; /* Evita scroll ao abrir o modal */
+  }
+  
+   
+  /* Form Container */
+  .form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    z-index: 20;
+    display: none; /* Oculto inicialmente */
+  }
+  
+  /* Form Header */
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-header h2 {
+    font-size: 20px;
+    color: rgb(68, 36, 247);
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .btn-nova-despesa {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-nova-despesa:hover {
+    background-color: #3c3aba;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px; /* Espaço entre os itens */
+    justify-content: space-between; /* Mantém uma boa distribuição */
+    
+  }
+
+  .form-column {
+    flex: 1; /* Cada coluna ocupa o mesmo espaço */
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .valor-input {
+    display: flex;
+    align-items: center;    
+  }
+  
+  .valor-input .currency {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .valor-input input {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #edb9fd;
+    border-radius: 5px;
+  }
+  
+  /* Toggle Switch */
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .switch-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+  
+  .switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input:checked + .switch-slider {
+    background-color: #4f46e5;
+  }
+  
+  input:checked + .switch-slider:before {
+    transform: translateX(20px);
+  }
+  
+  /* Buttons */
+  .submit-btn {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #3c3aba;
+  }
+  
+  .cancel-btn {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .cancel-btn:hover {
+    color: #555;
+  }
+  
+    
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+  }
